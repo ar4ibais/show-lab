@@ -12,6 +12,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
 body {
     background-color: #121212;
     color: #FAFAFA;
@@ -26,10 +31,13 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+.hero {
+    margin-bottom: 45px;
+}
 
 .header {
     padding-top: 65px;
-    margin-bottom: 120px;
+    margin-bottom: 85px;
 }
 .header__inner {
     display: flex;
@@ -41,8 +49,46 @@ body {
     gap: 70px;
 }
 .header__nav-link {
-    transition: all .3s;
+    transition: all .4s;
 }
 .header__nav-link:hover {
     text-shadow: 0px 0px 28px #FFC648;
+}
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 52px;
+    color: #FFC648;
+    text-shadow: 0px 0px 28px #FFC648;
+}
+.hero__subtitle {
+    font-weight: 300;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.hero__button {
+    font-size: 40px;
+    color: #121212;
+    padding: 15px 25px;
+    background: linear-gradient(77deg, #E1A218 0%, #FFD476 100%);
+    border-radius: 40px;
+    border: 1px solid transparent;
+    transition: all .4s
+}
+
+.hero__button:hover {
+    transition: all .4s;
+    color: #FFC648;
+    border-color: #F2BC45;
+    box-shadow: inset 0 0 0 1000px #121212;
+}
+.hero__video {
+    border-radius: 12px;
+    width: 325px;
+    height: 576px;
 }
