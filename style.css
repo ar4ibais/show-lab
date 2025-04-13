@@ -31,7 +31,17 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
-.hero {
+.title {
+    color: #FFC648;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-shadow: 0px 0px 28px #FFC648;
+    margin-bottom: 27px;
+}
+.hero,
+.about,
+.services {
     margin-bottom: 45px;
 }
 
@@ -73,6 +83,7 @@ body {
 }
 .hero__button {
     font-size: 40px;
+    font-weight: 300;
     color: #121212;
     padding: 15px 25px;
     background: linear-gradient(77deg, #E1A218 0%, #FFD476 100%);
@@ -91,4 +102,129 @@ body {
     border-radius: 12px;
     width: 325px;
     height: 576px;
+}
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.about__content {
+    max-width: 700px;
+}
+.about__text {
+    margin-bottom: 35px;
+}
+.about__subtitle {
+    color: #FFC648;
+    text-shadow: 0px 0px 28px #FFC648;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.about__image img {
+    border-radius: 20px;
+    max-height: 645px;
+}
+.about__arsenal-text {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 60px;
+    border: 1px solid transparent;
+    background: 
+        linear-gradient(#121212, #121212) padding-box,
+        linear-gradient(77deg, #E1A218, #FFD476) border-box;
+}
+.about__arsenal-text + .about__arsenal-text {
+    margin-top: 15px;
+}
+.services__content-wrapper {
+    background-image: url(./assets/services-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+.services__content {
+    display: flex;
+    justify-content: space-between;
+}
+.services__content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.services__item {
+    position: relative;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 300;
+    padding: 13px 17px 13px 70px;
+    border-radius: 60px;
+    width: fit-content;
+}
+.services__item--13 {
+    padding: 13px 17px 13px 60px;
+}
+.services__item::after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 15px;
+    top: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services__item--1::after {
+    background-image: url(./assets/icons/services/1.svg);
+}
+.services__item--2::after {
+    background-image: url(./assets/icons/services/2.svg);
+}
+.services__item--3::after {
+    background-image: url(./assets/icons/services/3.svg);
+}
+.services__item--4::after {
+    background-image: url(./assets/icons/services/4.svg);
+}
+.services__item--5::after {
+    background-image: url(./assets/icons/services/5.svg);
+}
+.services__item--6::after {
+    background-image: url(./assets/icons/services/6.svg);
+}
+.services__item--7::after {
+    background-image: url(./assets/icons/services/7.svg);
+}
+.services__item--8::after {
+    background-image: url(./assets/icons/services/8.svg);
+}
+.services__item--9::after {
+    background-image: url(./assets/icons/services/9.svg);
+}
+.services__item--10::after {
+    background-image: url(./assets/icons/services/10.svg);
+}
+.services__item--11::after {
+    background-image: url(./assets/icons/services/11.svg);
+}
+.services__item--12::after {
+    background-image: url(./assets/icons/services/12.svg);
+}
+.services__item--13::after {
+    background-image: url(./assets/icons/services/13.svg);
+    left: 10px;
+}
+.services__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 60px;
+    padding: 1px; /* Толщина "рамки" */
+    background: linear-gradient(77deg, #E1A218, #FFD476);
+    -webkit-mask: 
+        linear-gradient(#fff, #fff) content-box, 
+        linear-gradient(#fff, #fff);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
